@@ -3,7 +3,7 @@
 /*
 Plugin Name: FCP Mobile CTA
 Description: Add a CTA button or sliding-out contacts to mobile screens
-Version: 1.0.0
+Version: 1.0.2
 Requires at least: 4.7
 Requires PHP: 5.2.4
 Author: Firmcatalyst, Vadim Volkov
