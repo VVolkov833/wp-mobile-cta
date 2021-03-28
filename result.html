@@ -11,181 +11,243 @@
                 <strong>Call us</strong>
                 +490000000000
             </a>
-            <a href="https://www.terminland.de" class="fcp-mcta-iconed fcp-mctai-terminland" target="_blank" rel="nofollow noopener noreferrer">
+            <a href="https://www.terminland.de" class="fcp-mcta-iconed fcp-mctai-map" target="_blank" rel="nofollow noopener noreferrer">
                 <strong>Book online</strong>
                 www.terminland.de
             </a>
         </div>
     </label>
-
-    <style>
-        #fcp-mcta-tumbler {
-            position:fixed;
-            opacity:0;
-            pointer-events:none;
-        }
-        .fcp-mcta-cta {
-            display:block;
-            margin:0;
-            padding:12px 16px;
-            position:fixed;
-            right:6px;
-            bottom:16px;
-            z-index:999;
-            line-height:1;
-            cursor:pointer;
-        }
-        
-        .fcp-mcta-back {
-            display:block;
-			margin:0;
-            overflow:hidden;
-            position:fixed;
-            left:0; top:100%; right:0; bottom:0;
-            z-index:99999998;
-            text-align:right;
-            font-size:0;
-            transition:top 0.3s 0.4s ease;
-        }
-        #fcp-mcta-tumbler:checked + .fcp-mcta-cta {
-            z-index:99999999;
-        }
-        #fcp-mcta-tumbler:checked + .fcp-mcta-cta + .fcp-mcta-back {
-            top:0;
-            transition:top 0.3s ease;
-        }
-        .fcp-mcta-back::before {
-            content:'';
-            width:1px;
-            height:100%;
-        }
-        .fcp-mcta-back::before,
-        .fcp-mcta-wrap {
-            display:inline-block;
-            vertical-align:bottom;
-            text-align:left;
-        }
-        .fcp-mcta-wrap {
-            width:279px;
-            margin:20px 6px;
-            margin-bottom:60px;
-        }
-        .fcp-mcta-wrap > a {
-            display:inline-block;
-            width:100%;
-            padding:10px 16px 14px;
-            box-sizing:border-box;
-            position:relative;
-            margin-bottom:16px;
-        }
-        .fcp-mcta-wrap > a > strong {
-            display:inline-block;
-            width:100%;
-            margin:6px 0 3px;
-        }
-        
-        /* icons */
-        .fcp-mcta-wrap > .fcp-mcta-iconed {
-            padding-left:64px;
-        }
-        .fcp-mcta-iconed::before {
-            content:'';
-            display:block;
-            margin-left:-50px;
-            width:36px;
-            height:36px;
-            position:absolute;
-            background-repeat:no-repeat;
-            background-position:center;
-            background-size:70%;
-        }
-        .fcp-mctai-email::before {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 16 16' %3E%3Cg fill='%238bc34a' stroke='%238bc34a' stroke-linejoin='round' stroke-width='.5' stroke-linecap='round' %3E%3Cpath d='M 15.5,14 H 0.5 V 6 L 8,0.5 15.5,6 Z' /%3E%3Cpath d='M 2.5,7.5 8,11 13.5,7.5' stroke='%23fff' stroke-width='1.2'/%3E%3C/g%3E%3C/svg%3E%0A");
-        }        
-        .fcp-mctai-phone::before {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 16 16'%0A%3E%3Cpath fill='%238bc34a' stroke='%238bc34a' stroke-linejoin='round' stroke-width='.5' d='M 4.1,0.5 C 4.7,0.5 4.9,1 4.9,1 l 1.4,3.3 c 0,0 0.2,0.4 -0.2,0.8 L 4.3,6.5 c 1,2 3,4 5.2,5.2 L 11,9.9 c 0.3,-0.4 0.8,-0.2 0.8,-0.2 l 3.3,1.4 c 0,0 0.4,0.1 0.4,0.8 0,2 -1.4,3.6 -1.4,3.6 C 6.6,15.5 0.5,9.5 0.5,2 0.5,2 2.5,0.6 4.1,0.5 Z'%0A/%3E%3C/svg%3E%0A");
-        }
-        .fcp-mctai-terminland::before {
-            background-image: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' %3E%3Cg stroke='none' fill='%238bc34a' %3E%3Cpath d='m8.5 0.5v15h7v-15h-7zm2.9 2.75 0 6c10e-4 0.77 0.3 1.8 1.75 1.75l1.15-0-0 1-1.7-0c-1-4e-3 -2.4-1-2.4-2.3 0 0-0-6.5-0-6.6l1.2-0z'/%3E%3Cpath d='m1.3 4.3h2.18v7.76h1.3v-7.75l2.2-0v-1.1h-5.7z'/%3E%3C/g%3E%3C/svg%3E%0A");
-        }
-        
-        /* styling */
-        .fcp-mcta-back {
-            background-color:#555555dd;
-        }
-        .fcp-mcta-cta,
-        #fcp-mcta-tumbler:checked + .fcp-mcta-cta:hover {
-            border:1px solid #8bc34a;
-            border-radius:20px;
-            padding-right:52px;
-            background-color:#8bc34a;
-            color:#fff;
-            font-size:15px;
-            transition:all 0.2s ease;
-        }
-        .fcp-mcta-cta::after {
-            content:'';
-            display:block;
-            width:22px;
-            height:22px;
-            position:absolute;
-            right:16px;
-            top:50%;
-            transform:translate(0, -50%);
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 16 16'%3E%3Cg fill='none' stroke='%23fff' stroke-linejoin='round' stroke-width='1' stroke-linecap='round'%3E%3Crect x='0.5' y='2.5' width='15' height='11'/%3E%3Cpath d='M 4.5,3.5 V 0.5'/%3E%3Cpath d='M 3.5,7.5 H 12.5'/%3E%3Cpath d='M 11.5,3.5 V 0.5'/%3E%3C/g%3E%3C/svg%3E");
-            background-repeat:no-repeat;
-            background-position:center;
-            background-size:85%;
-        }
-        
-        .fcp-mcta-cta:hover,
-        #fcp-mcta-tumbler:checked + .fcp-mcta-cta {
-            background-color:#5c86ba;
-            border-color:#5c86ba;
-            color:#fff;
-        }
-        #fcp-mcta-tumbler:checked + .fcp-mcta-cta::after {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' version='1.1' viewBox='0 0 16 16'%0A%3E%3Cg%0Afill='none' stroke='%23fff' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M 0.5,0.5 15.5,15.5'%0A/%3E%3Cpath d='M 15.5,0.5 0.5,15.5'%0A/%3E%3C/g%3E%3C/svg%3E%0A");
-        }
-        
-        
-        .fcp-mcta-wrap > a {
-            background-color:#fff;
-            border-radius:6px;
-            font-size:13px;
-            line-height:1.5;
-            text-decoration:none;
-            color:#666;
-            box-shadow: 0px 1px 4px 0px #00000044;
-        }
-        .fcp-mcta-wrap > a:hover {
-            background-color:#f8f8f8;
-            box-shadow:0px 1px 3px 0px #00000077;
-        }
-        .fcp-mcta-wrap > a > strong {
-            font-size:110%;
-            letter-spacing:0.5px;
-            color:#20497d;
-        }
-
-        /* transitions */
-        .fcp-mcta-wrap > a {
-            opacity:0;
-            transform:translate(0, 50%);
-            transition:transform 0.2s ease-out, opacity 0.3s ease-out;
-        }
-        #fcp-mcta-tumbler:checked + .fcp-mcta-cta + .fcp-mcta-back > .fcp-mcta-wrap > a {
-            opacity:1;
-            transform:translate(0, 0);
-        }
-        .fcp-mcta-wrap > a:nth-child(1) {
-            transition-delay:0.2s;
-        }
-        .fcp-mcta-wrap > a:nth-child(2) {
-            transition-delay:0.25s;
-        }
-        .fcp-mcta-wrap > a:nth-child(3) {
-            transition-delay:0.3s;
-        }
-    </style>
 </div>
+
+<style>
+
+#fcp-mcta {
+    /* main button */
+    --mcta-bg-color:#688b07;
+    --mcta-text-color:#fff;
+    --mcta-border:1px solid #688b07;
+    --mcta-border-radius:0;
+    /* main button hover */
+    --mcta-h-bg-color:#fff;
+    --mcta-h-text-color:#688b07;
+    --mcta-h-border:1px solid #688b07;
+    --mcta-h-border-radius:0;
+    /* badges */
+    --badge-bg-color:#fff;
+    --badge-text-color:#688b07;
+    --badge-text2-color:#666;
+    --badge-icon-color:#666;
+    /* badges hover*/
+    --badge-h-bg-color:#f6f6f6;
+    --badge-h-text-color:#688b07;
+    --badge-h-text2-color:#666;
+    --badge-h-icon-color:#688b07;
+    /* overlay */
+    --overlay-bg-color:#ffffffcc;
+    /* icons */
+    --icon-book:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 16 16'%3E%3Cg fill='none' stroke='%23000' stroke-linejoin='round' stroke-width='.8' stroke-linecap='round'%3E%3Crect x='0.5' y='2.5' width='15' height='11'/%3E%3Cpath d='M 4.5,3.5 V 0.5'/%3E%3Cpath d='M 3.5,7.5 H 12.5'/%3E%3Cpath d='M 11.5,3.5 V 0.5'/%3E%3C/g%3E%3C/svg%3E");
+    --icon-close:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' version='1.1' viewBox='0 0 16 16'%0A%3E%3Cg%0Afill='none' stroke='%23000' stroke-width='.8' stroke-linecap='round'%3E%3Cpath d='M 0.5,0.5 15.5,15.5'%0A/%3E%3Cpath d='M 15.5,0.5 0.5,15.5'%0A/%3E%3C/g%3E%3C/svg%3E%0A");
+
+    --icon-email:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 16 16' %3E%3Cg fill='none' stroke='%23000' stroke-linejoin='round' stroke-width='.5' stroke-linecap='round' %3E%3Cpath d='M 15.5,14 H 0.5 V 6 L 8,0.5 15.5,6 Z' /%3E%3Cpath d='M 2.5,7.5 8,11 13.5,7.5' /%3E%3C/g%3E%3C/svg%3E%0A");
+    --icon-phone:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 16 16'%0A%3E%3Cpath fill='none' stroke='%23000' stroke-linejoin='round' stroke-width='.5' d='M 4.1,0.5 C 4.7,0.5 4.9,1 4.9,1 l 1.4,3.3 c 0,0 0.2,0.4 -0.2,0.8 L 4.3,6.5 c 1,2 3,4 5.2,5.2 L 11,9.9 c 0.3,-0.4 0.8,-0.2 0.8,-0.2 l 3.3,1.4 c 0,0 0.4,0.1 0.4,0.8 0,2 -1.4,3.6 -1.4,3.6 C 6.6,15.5 0.5,9.5 0.5,2 0.5,2 2.5,0.6 4.1,0.5 Z'%0A/%3E%3C/svg%3E%0A");
+    --icon-map:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 16 16'%3E%3Cg%0Afill='none' stroke='%23000' stroke-linejoin='round' stroke-width='.5'%3E%3Ccircle cx='8' cy='7' r='2' /%3E%3Cpath d='M 2.75,7 C 2.75,4 5,1.75 8,1.75 c 2.9,0 5.25,2.35 5.25,5.25 0,3.18 -5.2,8.75 -5.2,8.75 0,0 -5.3,-5.5 -5.3,-8.75 z' /%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+#fcp-mcta-tumbler {
+    position:fixed;
+    opacity:0;
+    pointer-events:none;
+}
+.fcp-mcta-cta {
+    display:block;
+    margin:0;
+    padding:12px 16px;
+    position:fixed;
+    right:6px;
+    bottom:16px;
+    z-index:999;
+    line-height:1;
+    cursor:pointer;
+}
+
+.fcp-mcta-back {
+    display:block;
+    margin:0;
+    overflow:hidden;
+    position:fixed;
+    left:0; top:100%; right:0; bottom:0;
+    z-index:99999998;
+    text-align:right;
+    font-size:0;
+    transition:top 0.3s 0.4s ease;
+}
+#fcp-mcta-tumbler:checked + .fcp-mcta-cta {
+    z-index:99999999;
+}
+#fcp-mcta-tumbler:checked + .fcp-mcta-cta + .fcp-mcta-back {
+    top:0;
+    transition:top 0.3s ease;
+}
+.fcp-mcta-back::before {
+    content:'';
+    width:1px;
+    height:100%;
+}
+.fcp-mcta-back::before,
+.fcp-mcta-wrap {
+    display:inline-block;
+    vertical-align:bottom;
+    text-align:left;
+}
+.fcp-mcta-wrap {
+    width:279px;
+    margin:20px 6px;
+    margin-bottom:60px;
+}
+.fcp-mcta-wrap > a {
+    display:inline-block;
+    width:100%;
+    padding:10px 16px 14px;
+    box-sizing:border-box;
+    position:relative;
+    margin-bottom:16px;
+}
+.fcp-mcta-wrap > a > strong {
+    display:inline-block;
+    width:100%;
+    margin:6px 0 3px;
+}
+
+/* icons */
+.fcp-mcta-wrap > .fcp-mcta-iconed {
+    padding-left:64px;
+}
+.fcp-mcta-iconed::before {
+    content:'';
+    display:block;
+    margin-left:-50px;
+    width:36px;
+    height:36px;
+    position:absolute;
+    background-color:var(--badge-icon-color);
+    mask-repeat:no-repeat;
+    -webkit-mask-repeat:no-repeat;
+    mask-position:0 0;
+    -webkit-mask-position:0 0;
+    mask-size:70%;
+    -webkit-mask-size:70%;
+    mask-type:alpha;
+    -webkit-mask-type:alpha;
+}
+
+.fcp-mctai-email::before {
+    mask-image:var(--icon-email);
+    -webkit-mask-image:var(--icon-email);
+}        
+.fcp-mctai-phone::before {
+    mask-image:var(--icon-phone);
+    -webkit-mask-image:var(--icon-phone);
+}
+.fcp-mctai-map::before {
+    mask-image:var(--icon-map);
+    -webkit-mask-image:var(--icon-map);
+}
+
+/* styling */
+.fcp-mcta-back {
+    background-color:var(--overlay-bg-color);
+}
+.fcp-mcta-cta {
+    border:var(--mcta-border);
+    border-radius:var(--mcta-border-radius);
+    padding-right:52px;
+    background-color:var(--mcta-bg-color);
+    color:var(--mcta-text-color);
+    font-size:15px;
+    transition:all 0.2s ease;
+}
+.fcp-mcta-cta:hover,
+#fcp-mcta-tumbler:checked + .fcp-mcta-cta {
+    background-color:var(--mcta-h-bg-color);
+    border-color:var(--mcta-h-border);
+    color:var(--mcta-h-text-color);
+}
+
+.fcp-mcta-cta::after {
+    content:'';
+    display:block;
+    width:22px;
+    height:22px;
+    position:absolute;
+    right:16px;
+    top:50%;
+    transform:translate(0, -50%);
+    background-color:var(--mcta-text-color);
+    mask-repeat:no-repeat;
+    -webkit-mask-repeat:no-repeat;
+    mask-position:0 0;
+    -webkit-mask-position:0 0;
+    mask-size:85%;
+    -webkit-mask-size:85%;
+    mask-type:alpha;
+    -webkit-mask-type:alpha;
+    mask-image:var(--icon-book);
+    -webkit-mask-image:var(--icon-book);
+}
+#fcp-mcta-tumbler:checked + .fcp-mcta-cta::after {
+    mask-image:var(--icon-close);
+    -webkit-mask-image:var(--icon-close);
+}
+.fcp-mcta-cta:hover::after,
+#fcp-mcta-tumbler:checked + .fcp-mcta-cta::after {
+    background-color:var(--mcta-h-text-color);
+}
+
+
+.fcp-mcta-wrap > a {
+    background-color:var(--badge-bg-color);
+    border-radius:var(--mcta-h-border-radius);
+    font-size:13px;
+    line-height:1.5;
+    text-decoration:none;
+    color:var(--badge-text2-color);
+    box-shadow: 0px 1px 4px 0px #00000044;
+}
+.fcp-mcta-wrap > a:hover {
+    background-color:var(--badge-h-bg-color);
+    color:var(--badge-h-text2-color);
+    box-shadow:0px 1px 3px 0px #00000077;
+}
+.fcp-mcta-wrap > a > strong {
+    font-size:110%;
+    letter-spacing:0.5px;
+    color:var(--badge-text-color);
+}
+.fcp-mcta-wrap > a:hover > strong {
+    color:var(--badge-h-text-color);
+}
+.fcp-mcta-wrap > a:hover::before {
+    background-color:var(--badge-h-icon-color);
+}
+
+/* transitions */
+.fcp-mcta-wrap > a {
+    opacity:0;
+    transform:translate(0, 50%);
+    transition:transform 0.2s ease-out, opacity 0.3s ease-out;
+}
+#fcp-mcta-tumbler:checked + .fcp-mcta-cta + .fcp-mcta-back > .fcp-mcta-wrap > a {
+    opacity:1;
+    transform:translate(0, 0);
+}
+.fcp-mcta-wrap > a:nth-child(1) {
+    transition-delay:0.2s;
+}
+.fcp-mcta-wrap > a:nth-child(2) {
+    transition-delay:0.25s;
+}
+.fcp-mcta-wrap > a:nth-child(3) {
+    transition-delay:0.3s;
+}
+
+</style>
